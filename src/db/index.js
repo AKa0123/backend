@@ -5,7 +5,6 @@
 
    const connectDb=async ()=>{
   try{
-   
    const connectionInstance= await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
    console.log(`mongoodb connected ritika at ${connectionInstance.connection.host}`);
   }
